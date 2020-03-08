@@ -8,6 +8,7 @@
     <e p="$PROJECT_DIR$" t="IncludeFlat">
       <e p="WebApplication" t="IncludeRecursive">
         <e p="Controllers" t="Include">
+          <e p="PatientController.cs" t="Include" />
           <e p="UserController.cs" t="Include" />
           <e p="WeatherForecastController.cs" t="Include" />
         </e>
@@ -51,6 +52,7 @@
       <e p="WebApplicationData" t="IncludeRecursive">
         <e p="DataConfiguration.cs" t="Include" />
         <e p="Entities" t="Include">
+          <e p="PatientDto.cs" t="Include" />
           <e p="UserDto.cs" t="Include" />
         </e>
         <e p="IUnitOfWork.cs" t="Include" />
@@ -91,6 +93,7 @@
           <e p="UserService.cs" t="Include" />
         </e>
         <e p="Interfaces" t="Include">
+          <e p="IPatientService.cs" t="Include" />
           <e p="IUserService.cs" t="Include" />
         </e>
         <e p="ServicesConfiguration.cs" t="Include" />

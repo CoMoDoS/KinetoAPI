@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="89213cdc-e0f0-488a-a405-4a0969145817" name="Default Changelist" comment="" />
+    <list default="true" id="89213cdc-e0f0-488a-a405-4a0969145817" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/WebApplication/Controllers/PatientController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApplicationServices/Interfaces/IPatientService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.WebApplication/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebApplication/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.WebApplication/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebApplication/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication/obj/Debug/netcoreapp3.1/WebApplication.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/obj/Debug/netcoreapp3.1/WebApplication.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationModels/obj/Debug/netcoreapp3.1/WebApplicationModels.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationModels/obj/Debug/netcoreapp3.1/WebApplicationModels.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationServices/obj/Debug/netcoreapp3.1/WebApplicationServices.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationServices/obj/Debug/netcoreapp3.1/WebApplicationServices.csprojAssemblyReference.cache" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -69,6 +77,9 @@
     </expand>
     <select />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/WebApplicationData/DataConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApplicationData/UnitOfWork.cs" root0="FORCE_HIGHLIGHTING" />
@@ -79,15 +90,17 @@
     <setting file="file://$PROJECT_DIR$/WebApplication/Controllers/UserController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApplicationServices/Implementation/UserService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApplicationServices/ServicesConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/29C4CCAD-18CE-4A33-AD61-8860E75BB3E3/153/ControllerFactoryProvider.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplication/Controllers/PatientController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplicationServices/Interfaces/IPatientService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/29C4CCAD-18CE-4A33-AD61-8860E75BB3E3/153/ControllerFactoryProvider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApplicationCommon/CommonConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApplicationData/IUnitOfWork.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApplicationData/Repositories/UserRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApplicationData/Repositories/RepositoryBase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApplicationData/Entities/UserDto.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApplicationData/Interfaces/IUserRepository.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ACF3BB6B-D63D-4F2F-B9D4-174126FEB909/D/CallSiteRuntimeResolver.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/BF25C7DF-1FC7-4944-A452-9762F33B48C0/5/ActivatorUtilities.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ACF3BB6B-D63D-4F2F-B9D4-174126FEB909/D/CallSiteRuntimeResolver.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/BF25C7DF-1FC7-4944-A452-9762F33B48C0/5/ActivatorUtilities.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApplication/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApplication/WeatherForecast.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApplicationModels/User/UserModel.cs" root0="FORCE_HIGHLIGHTING" />
@@ -120,10 +133,13 @@
         <option value="9b716350-7724-4bfc-ada6-1b93f8802bb0/database/cabinet/schema/cabinet/table/User.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/9b716350-7724-4bfc-ada6-1b93f8802bb0/console.sql" />
         <option value="$PROJECT_DIR$/WebApplicationData/Repositories/UserRepository.cs" />
+        <option value="$PROJECT_DIR$/WebApplication/Controllers/PatientController.cs" />
+        <option value="$PROJECT_DIR$/WebApplicationServices/Interfaces/IPatientService.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1XRqmB6ISKcZfDY4gHra060MOAq" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -132,6 +148,7 @@
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TWShift.4" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="/media/ineag/7896137F96133CD6/Projects/netcoreapi/Bancassurance.API/Bancassurance.API.sln" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -178,17 +195,7 @@
       <list>
         <serviceView>
           <treeState>
-            <expand>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:postgres@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:postgres@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@4731b094" type="9fbbdea:ServiceModel$ServiceNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </treeState>
         </serviceView>
@@ -209,6 +216,8 @@
       <workItem from="1581190824239" duration="7567000" />
       <workItem from="1581623803402" duration="7486000" />
       <workItem from="1582364690883" duration="2156000" />
+      <workItem from="1582448121299" duration="332000" />
+      <workItem from="1583678290480" duration="262000" />
     </task>
     <servers />
   </component>
@@ -217,6 +226,17 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
     <state x="570" y="258" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581204916500">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -350,19 +370,6 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/WebApplicationData/Repositories/UserRepository.cs</url>
-          <line>19</line>
-          <properties documentPath="$PROJECT_DIR$/WebApplicationData/Repositories/UserRepository.cs" initialLine="19">
-            <startOffsets>
-              <option value="551" />
-            </startOffsets>
-            <endOffsets>
-              <option value="624" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/WebApplicationData/UnitOfWork.cs</url>
