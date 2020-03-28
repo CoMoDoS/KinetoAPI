@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/ineag/RiderProjects/WebApplication/WebApplicationModels/WebApplicationModels.csproj": {}
+    "/home/ineag/Projects/KinetoAPI/WebApplication/WebApplicationModels/WebApplicationModels.csproj": {}
   },
   "projects": {
-    "/home/ineag/RiderProjects/WebApplication/WebApplicationModels/WebApplicationModels.csproj": {
+    "/home/ineag/Projects/KinetoAPI/WebApplication/WebApplicationModels/WebApplicationModels.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/ineag/RiderProjects/WebApplication/WebApplicationModels/WebApplicationModels.csproj",
+        "projectUniqueName": "/home/ineag/Projects/KinetoAPI/WebApplication/WebApplicationModels/WebApplicationModels.csproj",
         "projectName": "WebApplicationModels",
-        "projectPath": "/home/ineag/RiderProjects/WebApplication/WebApplicationModels/WebApplicationModels.csproj",
+        "projectPath": "/home/ineag/Projects/KinetoAPI/WebApplication/WebApplicationModels/WebApplicationModels.csproj",
         "packagesPath": "/home/ineag/.nuget/packages/",
-        "outputPath": "/home/ineag/RiderProjects/WebApplication/WebApplicationModels/obj/",
+        "outputPath": "/home/ineag/Projects/KinetoAPI/WebApplication/WebApplicationModels/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/ineag/.config/NuGet/NuGet.Config"
@@ -53,7 +53,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.101/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.102/RuntimeIdentifierGraph.json"
         }
       }
     }

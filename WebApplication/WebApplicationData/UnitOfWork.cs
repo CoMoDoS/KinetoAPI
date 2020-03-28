@@ -1,6 +1,5 @@
 using System;
 using System.Data;
-using System.Data.SqlClient;
 using Microsoft.Extensions.Options;
 using Npgsql;
 using WebApplicationCommon.Settings;
@@ -18,10 +17,12 @@ namespace WebApplicationData
         private readonly AppSettings _appSettings;
 
         private IUserRepository _userRepository;
+        private IPatientRepository _patientRepository;
+        private IAppointmentRepository _appointmentRepository;
+        private ITreatmentRepository _treatmentRepository;
         
         public UnitOfWork(IOptions<AppSettings> appSettings )
         {
-            AppSettings appSettings1;
             _appSettings = appSettings.Value;
 
             _connection = new NpgsqlConnection("Server=localhost;Port=5432;Database=cabinet;User Id=postgres;Password=postgres");
@@ -29,7 +30,17 @@ namespace WebApplicationData
             _transaction = _connection.BeginTransaction();
         }
 
-        public IUserRepository UserRepository => _userRepository ?? (_userRepository = new UserRepository(_transaction));
+        public IUserRepository UserRepository => 
+            _userRepository ??= new UserRepository(_transaction);
+
+        public IPatientRepository PatientRepository =>
+            _patientRepository ??= new PatientRepository(_transaction);
+
+        public IAppointmentRepository AppointmentRepository =>
+            _appointmentRepository ??= new AppointmentRepository(_transaction);
+
+        public ITreatmentRepository TreatmentRepository =>
+            _treatmentRepository ??= new TreatmentRepository(_transaction);
 
         public void Commit()
         {
@@ -81,6 +92,7 @@ namespace WebApplicationData
         private void ResetRepositories()
         {
             _userRepository = null;
+            _patientRepository = null;
         }
 
         ~UnitOfWork()

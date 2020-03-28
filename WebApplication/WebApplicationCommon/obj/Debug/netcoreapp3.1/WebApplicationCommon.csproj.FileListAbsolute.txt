@@ -9,3 +9,14 @@
 /home/ineag/RiderProjects/WebApplication/WebApplicationCommon/obj/Debug/netcoreapp3.1/WebApplicationCommon.RazorTargetAssemblyInfo.cache
 /home/ineag/RiderProjects/WebApplication/WebApplicationCommon/obj/Debug/netcoreapp3.1/WebApplicationCommon.dll
 /home/ineag/RiderProjects/WebApplication/WebApplicationCommon/obj/Debug/netcoreapp3.1/WebApplicationCommon.pdb
+/home/ineag/Projects/KinetoAPI/WebApplication/WebApplicationCommon/bin/Debug/netcoreapp3.1/WebApplicationCommon.deps.json
+/home/ineag/Projects/KinetoAPI/WebApplication/WebApplicationCommon/bin/Debug/netcoreapp3.1/WebApplicationCommon.dll
+/home/ineag/Projects/KinetoAPI/WebApplication/WebApplicationCommon/bin/Debug/netcoreapp3.1/WebApplicationCommon.pdb
+/home/ineag/Projects/KinetoAPI/WebApplication/WebApplicationCommon/obj/Debug/netcoreapp3.1/WebApplicationCommon.csprojAssemblyReference.cache
+/home/ineag/Projects/KinetoAPI/WebApplication/WebApplicationCommon/obj/Debug/netcoreapp3.1/WebApplicationCommon.AssemblyInfoInputs.cache
+/home/ineag/Projects/KinetoAPI/WebApplication/WebApplicationCommon/obj/Debug/netcoreapp3.1/WebApplicationCommon.AssemblyInfo.cs
+/home/ineag/Projects/KinetoAPI/WebApplication/WebApplicationCommon/obj/Debug/netcoreapp3.1/WebApplicationCommon.RazorTargetAssemblyInfo.cache
+/home/ineag/Projects/KinetoAPI/WebApplication/WebApplicationCommon/obj/Debug/netcoreapp3.1/staticwebassets/WebApplicationCommon.StaticWebAssets.Manifest.cache
+/home/ineag/Projects/KinetoAPI/WebApplication/WebApplicationCommon/obj/Debug/netcoreapp3.1/staticwebassets/WebApplicationCommon.StaticWebAssets.xml
+/home/ineag/Projects/KinetoAPI/WebApplication/WebApplicationCommon/obj/Debug/netcoreapp3.1/WebApplicationCommon.dll
+/home/ineag/Projects/KinetoAPI/WebApplication/WebApplicationCommon/obj/Debug/netcoreapp3.1/WebApplicationCommon.pdb

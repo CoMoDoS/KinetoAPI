@@ -705,11 +705,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/ineag/RiderProjects/WebApplication/WebApplication/WebApplication.csproj",
+      "projectUniqueName": "/home/ineag/Projects/KinetoAPI/WebApplication/WebApplication/WebApplication.csproj",
       "projectName": "WebApplication",
-      "projectPath": "/home/ineag/RiderProjects/WebApplication/WebApplication/WebApplication.csproj",
+      "projectPath": "/home/ineag/Projects/KinetoAPI/WebApplication/WebApplication/WebApplication.csproj",
       "packagesPath": "/home/ineag/.nuget/packages/",
-      "outputPath": "/home/ineag/RiderProjects/WebApplication/WebApplication/obj/",
+      "outputPath": "/home/ineag/Projects/KinetoAPI/WebApplication/WebApplication/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/ineag/.config/NuGet/NuGet.Config"
@@ -723,11 +723,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "/home/ineag/RiderProjects/WebApplication/WebApplicationData/WebApplicationData.csproj": {
-              "projectPath": "/home/ineag/RiderProjects/WebApplication/WebApplicationData/WebApplicationData.csproj"
+            "/home/ineag/Projects/KinetoAPI/WebApplication/WebApplicationData/WebApplicationData.csproj": {
+              "projectPath": "/home/ineag/Projects/KinetoAPI/WebApplication/WebApplicationData/WebApplicationData.csproj"
             },
-            "/home/ineag/RiderProjects/WebApplication/WebApplicationServices/WebApplicationServices.csproj": {
-              "projectPath": "/home/ineag/RiderProjects/WebApplication/WebApplicationServices/WebApplicationServices.csproj"
+            "/home/ineag/Projects/KinetoAPI/WebApplication/WebApplicationServices/WebApplicationServices.csproj": {
+              "projectPath": "/home/ineag/Projects/KinetoAPI/WebApplication/WebApplicationServices/WebApplicationServices.csproj"
             }
           }
         }
@@ -758,7 +758,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.101/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.102/RuntimeIdentifierGraph.json"
       }
     }
   }

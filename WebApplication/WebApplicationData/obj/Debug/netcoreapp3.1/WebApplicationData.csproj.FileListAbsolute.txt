@@ -12,3 +12,17 @@
 /home/ineag/RiderProjects/WebApplication/WebApplicationData/obj/Debug/netcoreapp3.1/WebApplicationData.csproj.CopyComplete
 /home/ineag/RiderProjects/WebApplication/WebApplicationData/obj/Debug/netcoreapp3.1/WebApplicationData.dll
 /home/ineag/RiderProjects/WebApplication/WebApplicationData/obj/Debug/netcoreapp3.1/WebApplicationData.pdb
+/home/ineag/Projects/KinetoAPI/WebApplication/WebApplicationData/bin/Debug/netcoreapp3.1/WebApplicationData.deps.json
+/home/ineag/Projects/KinetoAPI/WebApplication/WebApplicationData/bin/Debug/netcoreapp3.1/WebApplicationData.dll
+/home/ineag/Projects/KinetoAPI/WebApplication/WebApplicationData/bin/Debug/netcoreapp3.1/WebApplicationData.pdb
+/home/ineag/Projects/KinetoAPI/WebApplication/WebApplicationData/bin/Debug/netcoreapp3.1/WebApplicationCommon.dll
+/home/ineag/Projects/KinetoAPI/WebApplication/WebApplicationData/bin/Debug/netcoreapp3.1/WebApplicationCommon.pdb
+/home/ineag/Projects/KinetoAPI/WebApplication/WebApplicationData/obj/Debug/netcoreapp3.1/WebApplicationData.csprojAssemblyReference.cache
+/home/ineag/Projects/KinetoAPI/WebApplication/WebApplicationData/obj/Debug/netcoreapp3.1/WebApplicationData.AssemblyInfoInputs.cache
+/home/ineag/Projects/KinetoAPI/WebApplication/WebApplicationData/obj/Debug/netcoreapp3.1/WebApplicationData.AssemblyInfo.cs
+/home/ineag/Projects/KinetoAPI/WebApplication/WebApplicationData/obj/Debug/netcoreapp3.1/WebApplicationData.RazorTargetAssemblyInfo.cache
+/home/ineag/Projects/KinetoAPI/WebApplication/WebApplicationData/obj/Debug/netcoreapp3.1/WebApplicationData.csproj.CopyComplete
+/home/ineag/Projects/KinetoAPI/WebApplication/WebApplicationData/obj/Debug/netcoreapp3.1/staticwebassets/WebApplicationData.StaticWebAssets.Manifest.cache
+/home/ineag/Projects/KinetoAPI/WebApplication/WebApplicationData/obj/Debug/netcoreapp3.1/staticwebassets/WebApplicationData.StaticWebAssets.xml
+/home/ineag/Projects/KinetoAPI/WebApplication/WebApplicationData/obj/Debug/netcoreapp3.1/WebApplicationData.dll
+/home/ineag/Projects/KinetoAPI/WebApplication/WebApplicationData/obj/Debug/netcoreapp3.1/WebApplicationData.pdb

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="dataSourceStorageLocal">
     <data-source name="postgres@localhost" uuid="9b716350-7724-4bfc-ada6-1b93f8802bb0">
-      <database-info product="PostgreSQL" version="10.10 (Ubuntu 10.10-0ubuntu0.18.04.1)" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.2.5" dbms="POSTGRES" exact-version="10.10" exact-driver-version="42.2">
+      <database-info product="PostgreSQL" version="10.12 (Ubuntu 10.12-0ubuntu0.18.04.1)" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.2.5" dbms="POSTGRES" exact-version="10.12" exact-driver-version="42.2">
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>
       <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
@@ -14,11 +14,10 @@
             <node kind="database" qname="@">
               <node kind="schema" qname="@" />
             </node>
-            <node kind="database" qname="cabinet">
-              <node kind="schema">
-                <name qname="cabinet" />
-                <name qname="public" />
-              </node>
+            <node kind="database">
+              <name qname="cabinet" />
+              <name qname="postgres" />
+              <node kind="schema" qname="cabinet" />
             </node>
           </node>
         </introspection-scope>

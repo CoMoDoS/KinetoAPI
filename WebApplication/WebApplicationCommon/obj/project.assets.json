@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/ineag/RiderProjects/WebApplication/WebApplicationCommon/WebApplicationCommon.csproj",
+      "projectUniqueName": "/home/ineag/Projects/KinetoAPI/WebApplication/WebApplicationCommon/WebApplicationCommon.csproj",
       "projectName": "WebApplicationCommon",
-      "projectPath": "/home/ineag/RiderProjects/WebApplication/WebApplicationCommon/WebApplicationCommon.csproj",
+      "projectPath": "/home/ineag/Projects/KinetoAPI/WebApplication/WebApplicationCommon/WebApplicationCommon.csproj",
       "packagesPath": "/home/ineag/.nuget/packages/",
-      "outputPath": "/home/ineag/RiderProjects/WebApplication/WebApplicationCommon/obj/",
+      "outputPath": "/home/ineag/Projects/KinetoAPI/WebApplication/WebApplicationCommon/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/ineag/.config/NuGet/NuGet.Config"
@@ -59,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.101/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.102/RuntimeIdentifierGraph.json"
       }
     }
   }

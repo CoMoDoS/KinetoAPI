@@ -2,13 +2,121 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="89213cdc-e0f0-488a-a405-4a0969145817" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/WebApplication/Controllers/PatientController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApplicationServices/Interfaces/IPatientService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApplication/Controllers/AppointmentController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApplication/Controllers/TreatmentController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApplicationData/Entities/AppointmentDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApplicationData/Entities/TreatmentDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApplicationData/Interfaces/IAppointmentRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApplicationData/Interfaces/IPatientRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApplicationData/Interfaces/ITreatmentRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApplicationData/Repositories/AppointmentRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApplicationData/Repositories/PatientRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApplicationData/Repositories/TreatmentRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApplicationServices/Implementation/AppointmentService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApplicationServices/Implementation/PatientService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApplicationServices/Implementation/TreatmentService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApplicationServices/Interfaces/IAppointmentService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApplicationServices/Interfaces/ITreatmentService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WebApplication/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebApplication/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.WebApplication/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebApplication/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.WebApplication/.idea/dataSources/9b716350-7724-4bfc-ada6-1b93f8802bb0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebApplication/.idea/dataSources/9b716350-7724-4bfc-ada6-1b93f8802bb0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.WebApplication/.idea/dataSources/9b716350-7724-4bfc-ada6-1b93f8802bb0/storage_v2/_src_/database/cabinet.WGIlIA/schema/cabinet.WGIlIA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebApplication/.idea/dataSources/9b716350-7724-4bfc-ada6-1b93f8802bb0/storage_v2/_src_/database/cabinet.WGIlIA/schema/cabinet.WGIlIA.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.WebApplication/.idea/dataSources/9b716350-7724-4bfc-ada6-1b93f8802bb0/storage_v2/_src_/database/cabinet.WGIlIA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebApplication/.idea/dataSources/9b716350-7724-4bfc-ada6-1b93f8802bb0/storage_v2/_src_/database/cabinet.WGIlIA/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.WebApplication/.idea/dataSources/9b716350-7724-4bfc-ada6-1b93f8802bb0/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebApplication/.idea/dataSources/9b716350-7724-4bfc-ada6-1b93f8802bb0/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WebApplication/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebApplication/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication/Controllers/PatientController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/Controllers/PatientController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication/Controllers/UserController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/Controllers/UserController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication/Controllers/WeatherForecastController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/Properties/launchSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication/WeatherForecast.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/Properties/launchSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/WebApplication" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/WebApplication" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/WebApplication.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/WebApplication.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/WebApplication.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/WebApplication.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/WebApplication.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/WebApplication.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/WebApplicationCommon.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/WebApplicationCommon.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/WebApplicationCommon.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/WebApplicationCommon.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/WebApplicationData.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/WebApplicationData.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/WebApplicationData.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/WebApplicationData.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/WebApplicationModels.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/WebApplicationModels.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/WebApplicationModels.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/WebApplicationModels.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/WebApplicationServices.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/WebApplicationServices.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/WebApplicationServices.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/WebApplicationServices.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication/obj/Debug/netcoreapp3.1/WebApplication" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/obj/Debug/netcoreapp3.1/WebApplication" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication/obj/Debug/netcoreapp3.1/WebApplication.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/obj/Debug/netcoreapp3.1/WebApplication.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication/obj/Debug/netcoreapp3.1/WebApplication.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/obj/Debug/netcoreapp3.1/WebApplication.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplication/obj/Debug/netcoreapp3.1/WebApplication.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/obj/Debug/netcoreapp3.1/WebApplication.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication/obj/Debug/netcoreapp3.1/WebApplication.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/obj/Debug/netcoreapp3.1/WebApplication.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication/obj/Debug/netcoreapp3.1/WebApplication.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/obj/Debug/netcoreapp3.1/WebApplication.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication/obj/WebApplication.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/obj/WebApplication.csproj.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication/obj/WebApplication.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/obj/WebApplication.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationCommon/bin/Debug/netcoreapp3.1/WebApplicationCommon.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationCommon/bin/Debug/netcoreapp3.1/WebApplicationCommon.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationCommon/bin/Debug/netcoreapp3.1/WebApplicationCommon.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationCommon/bin/Debug/netcoreapp3.1/WebApplicationCommon.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationCommon/bin/Debug/netcoreapp3.1/WebApplicationCommon.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationCommon/bin/Debug/netcoreapp3.1/WebApplicationCommon.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationCommon/obj/Debug/netcoreapp3.1/WebApplicationCommon.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationCommon/obj/Debug/netcoreapp3.1/WebApplicationCommon.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationCommon/obj/Debug/netcoreapp3.1/WebApplicationCommon.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationCommon/obj/Debug/netcoreapp3.1/WebApplicationCommon.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationCommon/obj/Debug/netcoreapp3.1/WebApplicationCommon.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationCommon/obj/Debug/netcoreapp3.1/WebApplicationCommon.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationCommon/obj/Debug/netcoreapp3.1/WebApplicationCommon.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationCommon/obj/Debug/netcoreapp3.1/WebApplicationCommon.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationCommon/obj/Debug/netcoreapp3.1/WebApplicationCommon.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationCommon/obj/Debug/netcoreapp3.1/WebApplicationCommon.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationCommon/obj/WebApplicationCommon.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationCommon/obj/WebApplicationCommon.csproj.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationCommon/obj/WebApplicationCommon.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationCommon/obj/WebApplicationCommon.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationCommon/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationCommon/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationCommon/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationCommon/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationData/Entities/PatientDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationData/Entities/PatientDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationData/IUnitOfWork.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationData/IUnitOfWork.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationData/Interfaces/IUserRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationData/Interfaces/IUserRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationData/Repositories/UserRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationData/Repositories/UserRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationData/UnitOfWork.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationData/UnitOfWork.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationData/bin/Debug/netcoreapp3.1/WebApplicationCommon.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationData/bin/Debug/netcoreapp3.1/WebApplicationCommon.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationData/bin/Debug/netcoreapp3.1/WebApplicationCommon.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationData/bin/Debug/netcoreapp3.1/WebApplicationCommon.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationData/bin/Debug/netcoreapp3.1/WebApplicationData.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationData/bin/Debug/netcoreapp3.1/WebApplicationData.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationData/bin/Debug/netcoreapp3.1/WebApplicationData.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationData/bin/Debug/netcoreapp3.1/WebApplicationData.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationData/bin/Debug/netcoreapp3.1/WebApplicationData.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationData/bin/Debug/netcoreapp3.1/WebApplicationData.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationData/obj/Debug/netcoreapp3.1/WebApplicationData.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationData/obj/Debug/netcoreapp3.1/WebApplicationData.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationData/obj/Debug/netcoreapp3.1/WebApplicationData.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationData/obj/Debug/netcoreapp3.1/WebApplicationData.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationData/obj/Debug/netcoreapp3.1/WebApplicationData.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationData/obj/Debug/netcoreapp3.1/WebApplicationData.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationData/obj/Debug/netcoreapp3.1/WebApplicationData.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationData/obj/Debug/netcoreapp3.1/WebApplicationData.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationData/obj/Debug/netcoreapp3.1/WebApplicationData.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationData/obj/Debug/netcoreapp3.1/WebApplicationData.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationData/obj/WebApplicationData.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationData/obj/WebApplicationData.csproj.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationData/obj/WebApplicationData.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationData/obj/WebApplicationData.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationData/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationData/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationData/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationData/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationModels/bin/Debug/netcoreapp3.1/WebApplicationModels.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationModels/bin/Debug/netcoreapp3.1/WebApplicationModels.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationModels/bin/Debug/netcoreapp3.1/WebApplicationModels.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationModels/bin/Debug/netcoreapp3.1/WebApplicationModels.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationModels/bin/Debug/netcoreapp3.1/WebApplicationModels.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationModels/bin/Debug/netcoreapp3.1/WebApplicationModels.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationModels/obj/Debug/netcoreapp3.1/WebApplicationModels.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationModels/obj/Debug/netcoreapp3.1/WebApplicationModels.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationModels/obj/Debug/netcoreapp3.1/WebApplicationModels.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationModels/obj/Debug/netcoreapp3.1/WebApplicationModels.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplicationModels/obj/Debug/netcoreapp3.1/WebApplicationModels.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationModels/obj/Debug/netcoreapp3.1/WebApplicationModels.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationModels/obj/Debug/netcoreapp3.1/WebApplicationModels.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationModels/obj/Debug/netcoreapp3.1/WebApplicationModels.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationModels/obj/Debug/netcoreapp3.1/WebApplicationModels.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationModels/obj/Debug/netcoreapp3.1/WebApplicationModels.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationModels/obj/WebApplicationModels.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationModels/obj/WebApplicationModels.csproj.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationModels/obj/WebApplicationModels.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationModels/obj/WebApplicationModels.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationModels/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationModels/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationModels/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationModels/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationServices/Implementation/UserService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationServices/Implementation/UserService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationServices/Interfaces/IPatientService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationServices/Interfaces/IPatientService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationServices/Interfaces/IUserService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationServices/Interfaces/IUserService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationServices/ServicesConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationServices/ServicesConfiguration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationServices/bin/Debug/netcoreapp3.1/WebApplicationCommon.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationServices/bin/Debug/netcoreapp3.1/WebApplicationCommon.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationServices/bin/Debug/netcoreapp3.1/WebApplicationCommon.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationServices/bin/Debug/netcoreapp3.1/WebApplicationCommon.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationServices/bin/Debug/netcoreapp3.1/WebApplicationData.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationServices/bin/Debug/netcoreapp3.1/WebApplicationData.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationServices/bin/Debug/netcoreapp3.1/WebApplicationData.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationServices/bin/Debug/netcoreapp3.1/WebApplicationData.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationServices/bin/Debug/netcoreapp3.1/WebApplicationModels.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationServices/bin/Debug/netcoreapp3.1/WebApplicationModels.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationServices/bin/Debug/netcoreapp3.1/WebApplicationModels.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationServices/bin/Debug/netcoreapp3.1/WebApplicationModels.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationServices/bin/Debug/netcoreapp3.1/WebApplicationServices.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationServices/bin/Debug/netcoreapp3.1/WebApplicationServices.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationServices/bin/Debug/netcoreapp3.1/WebApplicationServices.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationServices/bin/Debug/netcoreapp3.1/WebApplicationServices.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationServices/bin/Debug/netcoreapp3.1/WebApplicationServices.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationServices/bin/Debug/netcoreapp3.1/WebApplicationServices.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationServices/obj/Debug/netcoreapp3.1/WebApplicationServices.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationServices/obj/Debug/netcoreapp3.1/WebApplicationServices.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationServices/obj/Debug/netcoreapp3.1/WebApplicationServices.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationServices/obj/Debug/netcoreapp3.1/WebApplicationServices.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplicationServices/obj/Debug/netcoreapp3.1/WebApplicationServices.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationServices/obj/Debug/netcoreapp3.1/WebApplicationServices.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationServices/obj/Debug/netcoreapp3.1/WebApplicationServices.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationServices/obj/Debug/netcoreapp3.1/WebApplicationServices.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationServices/obj/Debug/netcoreapp3.1/WebApplicationServices.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationServices/obj/Debug/netcoreapp3.1/WebApplicationServices.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationServices/obj/WebApplicationServices.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationServices/obj/WebApplicationServices.csproj.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationServices/obj/WebApplicationServices.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationServices/obj/WebApplicationServices.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationServices/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationServices/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationServices/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationServices/obj/project.packagespec.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,49 +174,56 @@
         <item name="cabinet: schema" type="983ebcf7:PgImplModel$Schema" />
         <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="postgres@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="cabinet: database" type="162271b6:PgImplModel$Database" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
-      </path>
     </expand>
     <select />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/WebApplicationData/DataConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/WebApplicationData/UnitOfWork.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/WebApplicationCommon/Settings/AppSettings.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ACF3BB6B-D63D-4F2F-B9D4-174126FEB909/F/CallSiteVisitor.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/WebApplicationCommon/Utils/AesEncryptionService.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/WebApplicationServices/Interfaces/IUserService.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/WebApplication/Controllers/UserController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/WebApplicationServices/Implementation/UserService.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/WebApplicationServices/ServicesConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplication/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplication/appsettings.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplication/appsettings.Development.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplicationData/Entities/AppointmentDto.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplicationData/Entities/TreatmentDto.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApplication/Controllers/PatientController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/WebApplicationServices/Interfaces/IPatientService.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/29C4CCAD-18CE-4A33-AD61-8860E75BB3E3/153/ControllerFactoryProvider.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/WebApplicationCommon/CommonConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplicationData/DataConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApplicationData/IUnitOfWork.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplicationCommon/Utils/AesEncryptionService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplicationCommon/Settings/AppSettings.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplication/Controllers/UserController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplicationData/Interfaces/ITreatmentRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplicationData/UnitOfWork.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplicationServices/Interfaces/IPatientService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplicationData/Interfaces/IAppointmentRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplicationServices/Interfaces/IUserService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplicationData/Repositories/AppointmentRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplicationServices/Implementation/UserService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplicationData/Repositories/TreatmentRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplication/Startup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplicationServices/Interfaces/IAppointmentService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplicationServices/ServicesConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplicationServices/Interfaces/ITreatmentService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplicationServices/Implementation/TreatmentService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplicationServices/Implementation/AppointmentService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplication/Controllers/AppointmentController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplication/Controllers/TreatmentController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplicationServices/Implementation/PatientService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplicationData/Repositories/PatientRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplication/Properties/launchSettings.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplicationData/Interfaces/IPatientRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplicationData/Entities/PatientDto.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplicationData/Entities/UserDto.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplicationModels/User/UserModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplicationData/Interfaces/IUserRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApplicationData/Repositories/UserRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApplicationData/Repositories/RepositoryBase.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/WebApplicationData/Entities/UserDto.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/WebApplicationData/Interfaces/IUserRepository.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ACF3BB6B-D63D-4F2F-B9D4-174126FEB909/D/CallSiteRuntimeResolver.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/BF25C7DF-1FC7-4944-A452-9762F33B48C0/5/ActivatorUtilities.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/WebApplication/Program.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/WebApplication/WeatherForecast.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/WebApplicationModels/User/UserModel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/WebApplication/appsettings.Development.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/WebApplication/Startup.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/WebApplication/appsettings.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/WebApplication/Properties/launchSettings.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/WebApplication/Controllers/WeatherForecastController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplicationCommon/CommonConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -117,24 +232,43 @@
         <option value="$PROJECT_DIR$/WebApplicationData/DataConfiguration.cs" />
         <option value="$PROJECT_DIR$/WebApplicationData/Repositories/RepositoryBase.cs" />
         <option value="$PROJECT_DIR$/WebApplicationData/Entities/UserDto.cs" />
-        <option value="$PROJECT_DIR$/WebApplicationData/Interfaces/IUserRepository.cs" />
         <option value="$PROJECT_DIR$/WebApplicationCommon/Utils/AesEncryptionService.cs" />
         <option value="$PROJECT_DIR$/WebApplication/appsettings.json" />
         <option value="$PROJECT_DIR$/WebApplicationCommon/Settings/AppSettings.cs" />
         <option value="$PROJECT_DIR$/WebApplication/Controllers/WeatherForecastController.cs" />
         <option value="$PROJECT_DIR$/WebApplicationModels/User/UserModel.cs" />
-        <option value="$PROJECT_DIR$/WebApplicationData/IUnitOfWork.cs" />
-        <option value="$PROJECT_DIR$/WebApplicationServices/ServicesConfiguration.cs" />
         <option value="$PROJECT_DIR$/WebApplication/Startup.cs" />
-        <option value="$PROJECT_DIR$/WebApplication/Controllers/UserController.cs" />
-        <option value="$PROJECT_DIR$/WebApplicationServices/Implementation/UserService.cs" />
-        <option value="$PROJECT_DIR$/WebApplicationServices/Interfaces/IUserService.cs" />
-        <option value="$PROJECT_DIR$/WebApplicationData/UnitOfWork.cs" />
         <option value="9b716350-7724-4bfc-ada6-1b93f8802bb0/database/cabinet/schema/cabinet/table/User.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/9b716350-7724-4bfc-ada6-1b93f8802bb0/console.sql" />
+        <option value="$PROJECT_DIR$/WebApplication/Properties/launchSettings.json" />
+        <option value="$PROJECT_DIR$/WebApplicationData/Entities/PatientDto.cs" />
+        <option value="$PROJECT_DIR$/WebApplicationData/Entities/Appointment.cs" />
+        <option value="$PROJECT_DIR$/WebApplicationData/Entities/Treatment.cs" />
+        <option value="$PROJECT_DIR$/WebApplicationData/Entities/AppointmentDto.cs" />
+        <option value="$PROJECT_DIR$/WebApplicationData/Entities/TreatmentDto.cs" />
+        <option value="$PROJECT_DIR$/WebApplicationData/UnitOfWork.cs" />
+        <option value="$PROJECT_DIR$/WebApplicationData/IUnitOfWork.cs" />
+        <option value="$PROJECT_DIR$/WebApplicationData/Interfaces/IUserRepository.cs" />
+        <option value="$PROJECT_DIR$/WebApplicationData/Interfaces/ITreatmentRepository.cs" />
+        <option value="$PROJECT_DIR$/WebApplicationData/Interfaces/IPatientRepository.cs" />
+        <option value="$PROJECT_DIR$/WebApplicationData/Interfaces/IAppointmentRepository.cs" />
         <option value="$PROJECT_DIR$/WebApplicationData/Repositories/UserRepository.cs" />
-        <option value="$PROJECT_DIR$/WebApplication/Controllers/PatientController.cs" />
+        <option value="$PROJECT_DIR$/WebApplicationData/Repositories/TreatmentRepository.cs" />
+        <option value="$PROJECT_DIR$/WebApplicationData/Repositories/PatientRepository.cs" />
+        <option value="$PROJECT_DIR$/WebApplicationData/Repositories/AppointmentRepository.cs" />
+        <option value="$PROJECT_DIR$/WebApplicationServices/Implementation/UserService.cs" />
+        <option value="$PROJECT_DIR$/WebApplicationServices/Implementation/TreatmentService.cs" />
+        <option value="$PROJECT_DIR$/WebApplicationServices/Implementation/PatientService.cs" />
+        <option value="$PROJECT_DIR$/WebApplicationServices/Implementation/AppointmentService.cs" />
+        <option value="$PROJECT_DIR$/WebApplicationServices/Interfaces/IUserService.cs" />
+        <option value="$PROJECT_DIR$/WebApplicationServices/Interfaces/ITreatmentService.cs" />
         <option value="$PROJECT_DIR$/WebApplicationServices/Interfaces/IPatientService.cs" />
+        <option value="$PROJECT_DIR$/WebApplicationServices/Interfaces/IAppointmentService.cs" />
+        <option value="$PROJECT_DIR$/WebApplication/Controllers/AppointmentController.cs" />
+        <option value="$PROJECT_DIR$/WebApplication/Controllers/TreatmentController.cs" />
+        <option value="$PROJECT_DIR$/WebApplication/Controllers/PatientController.cs" />
+        <option value="$PROJECT_DIR$/WebApplication/Controllers/UserController.cs" />
+        <option value="$PROJECT_DIR$/WebApplicationServices/ServicesConfiguration.cs" />
       </list>
     </option>
   </component>
@@ -146,8 +280,11 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="postgresql" />
+    <property name="Rider.SolutionExplorerActivator" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TWShift.3" value="true" />
     <property name="TWShift.4" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="/media/ineag/7896137F96133CD6/Projects/netcoreapi/Bancassurance.API/Bancassurance.API.sln" />
@@ -157,6 +294,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
   </component>
   <component name="RunManager" selected=".NET Launch Settings Profile.WebApplication">
     <configuration name="WebApplication" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
@@ -195,7 +333,17 @@
       <list>
         <serviceView>
           <treeState>
-            <expand />
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:postgres@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:postgres@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@6fc9affd" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+            </expand>
             <select />
           </treeState>
         </serviceView>
@@ -218,6 +366,8 @@
       <workItem from="1582364690883" duration="2156000" />
       <workItem from="1582448121299" duration="332000" />
       <workItem from="1583678290480" duration="262000" />
+      <workItem from="1583706396598" duration="55000" />
+      <workItem from="1585393655534" duration="11234000" />
     </task>
     <servers />
   </component>
@@ -231,17 +381,24 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="570" y="258" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581204916500">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="579" y="215" width="800" height="684" key="#Inspection_severity" timestamp="1585397867678">
+      <screen x="49" y="27" width="1871" height="1053" />
+    </state>
+    <state x="579" y="215" width="800" height="684" key="#Inspection_severity/49.27.1871.1053@49.27.1871.1053" timestamp="1585397867678" />
+    <state x="571" y="271" width="1048" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585401723392">
+      <screen x="49" y="27" width="1871" height="1053" />
     </state>
     <state x="570" y="258" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581204916500" />
+    <state x="571" y="271" width="1048" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog/49.27.1871.1053@49.27.1871.1053" timestamp="1585401723392" />
     <state x="632" y="325" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1581022518652">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -250,26 +407,31 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="408" height="466" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1582365745907" />
-    <state x="744" y="249" width="432" height="487" key="FileChooserDialogImpl" timestamp="1581626540830">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="774" y="279" width="424" height="491" key="FileChooserDialogImpl" timestamp="1585404077714">
+      <screen x="49" y="27" width="1871" height="1053" />
     </state>
     <state x="744" y="249" width="432" height="487" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1581626540830" />
-    <state width="1874" height="337" key="GridCell.Tab.0.bottom" timestamp="1582365560981">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="774" y="279" width="424" height="491" key="FileChooserDialogImpl/49.27.1871.1053@49.27.1871.1053" timestamp="1585404077714" />
+    <state width="1825" height="275" key="GridCell.Tab.0.bottom" timestamp="1585405612870">
+      <screen x="49" y="27" width="1871" height="1053" />
     </state>
     <state width="1874" height="337" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582365560981" />
-    <state width="1874" height="337" key="GridCell.Tab.0.center" timestamp="1582365560980">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1825" height="275" key="GridCell.Tab.0.bottom/49.27.1871.1053@49.27.1871.1053" timestamp="1585405612870" />
+    <state width="1825" height="275" key="GridCell.Tab.0.center" timestamp="1585405612869">
+      <screen x="49" y="27" width="1871" height="1053" />
     </state>
     <state width="1874" height="337" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582365560980" />
-    <state width="1874" height="337" key="GridCell.Tab.0.left" timestamp="1582365560980">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1825" height="275" key="GridCell.Tab.0.center/49.27.1871.1053@49.27.1871.1053" timestamp="1585405612869" />
+    <state width="1825" height="275" key="GridCell.Tab.0.left" timestamp="1585405612868">
+      <screen x="49" y="27" width="1871" height="1053" />
     </state>
     <state width="1874" height="337" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582365560980" />
-    <state width="1874" height="337" key="GridCell.Tab.0.right" timestamp="1582365560981">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1825" height="275" key="GridCell.Tab.0.left/49.27.1871.1053@49.27.1871.1053" timestamp="1585405612868" />
+    <state width="1825" height="275" key="GridCell.Tab.0.right" timestamp="1585405612869">
+      <screen x="49" y="27" width="1871" height="1053" />
     </state>
     <state width="1874" height="337" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582365560981" />
+    <state width="1825" height="275" key="GridCell.Tab.0.right/49.27.1871.1053@49.27.1871.1053" timestamp="1585405612869" />
     <state width="1874" height="337" key="GridCell.Tab.1.bottom" timestamp="1582365562512">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -338,105 +500,28 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="314" y="255" width="1050" height="538" key="Rider.ProjectTemplateDialog.Size/0.0.1920.1040@0.0.1920.1040" timestamp="1581626375551" />
-    <state x="857" y="417" width="340" height="233" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1582365303206">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="473" y="188" width="1022" height="737" key="SettingsEditor" timestamp="1585400764648">
+      <screen x="49" y="27" width="1871" height="1053" />
+    </state>
+    <state x="473" y="188" width="1022" height="737" key="SettingsEditor/49.27.1871.1053@49.27.1871.1053" timestamp="1585400764648" />
+    <state x="884" y="449" width="367" height="250" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1585397497131">
+      <screen x="49" y="27" width="1871" height="1053" />
     </state>
     <state x="857" y="417" width="340" height="233" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1920.1040@0.0.1920.1040" timestamp="1582365303206" />
+    <state x="884" y="449" width="367" height="250" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/49.27.1871.1053@49.27.1871.1053" timestamp="1585397497131" />
     <state x="739" y="347" width="441" height="341" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1581120131357">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="739" y="347" width="441" height="341" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581120131357" />
-    <state x="732" y="317" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1582365371273">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="762" y="243" width="566" height="837" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1585400287568">
+      <screen x="49" y="27" width="1871" height="1053" />
     </state>
     <state x="732" y="317" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582365371273" />
-    <state x="822" y="286" key="com.intellij.database.view.ui.DbObjectDialog" timestamp="1581114945530">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="762" y="243" width="566" height="837" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/49.27.1871.1053@49.27.1871.1053" timestamp="1585400287568" />
+    <state x="850" y="317" width="290" height="492" key="com.intellij.database.view.ui.DbObjectDialog" timestamp="1585397385467">
+      <screen x="49" y="27" width="1871" height="1053" />
     </state>
     <state x="822" y="286" key="com.intellij.database.view.ui.DbObjectDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581114945530" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/WebApplication/Controllers/UserController.cs</url>
-          <line>21</line>
-          <properties documentPath="$PROJECT_DIR$/WebApplication/Controllers/UserController.cs" initialLine="18">
-            <startOffsets>
-              <option value="573" />
-            </startOffsets>
-            <endOffsets>
-              <option value="620" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/WebApplicationData/UnitOfWork.cs</url>
-          <line>26</line>
-          <properties documentPath="$PROJECT_DIR$/WebApplicationData/UnitOfWork.cs" initialLine="25">
-            <startOffsets>
-              <option value="705" />
-            </startOffsets>
-            <endOffsets>
-              <option value="822" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/WebApplicationServices/Implementation/UserService.cs</url>
-          <line>20</line>
-          <properties documentPath="$PROJECT_DIR$/WebApplicationServices/Implementation/UserService.cs" initialLine="20">
-            <startOffsets>
-              <option value="550" />
-            </startOffsets>
-            <endOffsets>
-              <option value="612" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/WebApplication/Startup.cs</url>
-          <line>32</line>
-          <properties documentPath="$PROJECT_DIR$/WebApplication/Startup.cs" initialLine="30">
-            <startOffsets>
-              <option value="1020" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1071" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/WebApplicationServices/ServicesConfiguration.cs</url>
-          <line>13</line>
-          <properties documentPath="$PROJECT_DIR$/WebApplicationServices/ServicesConfiguration.cs" initialLine="13">
-            <startOffsets>
-              <option value="439" />
-            </startOffsets>
-            <endOffsets>
-              <option value="488" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/WebApplication/Controllers/UserController.cs</url>
-          <line>16</line>
-          <properties documentPath="$PROJECT_DIR$/WebApplication/Controllers/UserController.cs" initialLine="15">
-            <startOffsets>
-              <option value="-1" />
-            </startOffsets>
-            <endOffsets>
-              <option value="-1" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="850" y="317" width="290" height="492" key="com.intellij.database.view.ui.DbObjectDialog/49.27.1871.1053@49.27.1871.1053" timestamp="1585397385467" />
   </component>
 </project>

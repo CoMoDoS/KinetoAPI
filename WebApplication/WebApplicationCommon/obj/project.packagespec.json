@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "/home/ineag/RiderProjects/WebApplication/WebApplicationCommon/WebApplicationCommon.csproj",
+    "projectUniqueName": "/home/ineag/Projects/KinetoAPI/WebApplication/WebApplicationCommon/WebApplicationCommon.csproj",
     "projectName": "WebApplicationCommon",
-    "projectPath": "/home/ineag/RiderProjects/WebApplication/WebApplicationCommon/WebApplicationCommon.csproj",
-    "outputPath": "/home/ineag/RiderProjects/WebApplication/WebApplicationCommon/obj/",
+    "projectPath": "/home/ineag/Projects/KinetoAPI/WebApplication/WebApplicationCommon/WebApplicationCommon.csproj",
+    "outputPath": "/home/ineag/Projects/KinetoAPI/WebApplication/WebApplicationCommon/obj/",
     "projectStyle": "PackageReference",
     "originalTargetFrameworks": [
       "netcoreapp3.1"
@@ -43,7 +43,7 @@
           "privateAssets": "all"
         }
       },
-      "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.101/RuntimeIdentifierGraph.json"
+      "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.102/RuntimeIdentifierGraph.json"
     }
   }
 }

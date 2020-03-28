@@ -10,7 +10,7 @@ namespace WebApplicationData.Entities
         public int AppointmentsDone { get; set; }
         public int AppointmentsTotal { get; set; }
         public DateTime LastPay { get; set; }
-        public string AddedBy { get; set; }
-        public string status { get; set; }
+        public int AddedBy { get; set; }
+        public string Status { get; set; }
     }
 }

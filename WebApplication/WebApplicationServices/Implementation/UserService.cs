@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using WebApplicationData;
 using WebApplicationData.Entities;
@@ -17,9 +18,16 @@ namespace WebApplicationServices.Implementation
         
         public async Task<UserDto> GetByIdAsync(int id)
         {
-            UserDto userModel= null;
-            userModel = await _unitOfWork.UserRepository.GetByIdAsync(id);
+            var userModel = await _unitOfWork.UserRepository.GetByIdAsync(id);
+            
             return userModel;
+        }
+        
+        public async Task<IEnumerable<UserDto>> GetAll()
+        {
+            var users = await _unitOfWork.UserRepository.GetAll();
+            
+            return users;
         }
     }
 }
