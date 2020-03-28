@@ -1,13 +1,12 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using WebApplicationData.Entities;
-using WebApplicationModels.User;
 
 namespace WebApplicationServices.Interfaces
 {
-    public interface IUserService
+    public interface IAppointmentService
     {
-        Task<UserDto> GetByIdAsync(int id);
-        Task<IEnumerable<UserDto>> GetAll();
+        Task<AppointmentDto> GetByIdAsync(int id);
+        Task<IEnumerable<AppointmentDto>> GetAll();
     }
 }

@@ -1,4 +1,8 @@
+using System.Collections.Generic;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using WebApplicationData.Entities;
+using WebApplicationServices.Interfaces;
 
 namespace WebApplication.Controllers
 {
@@ -6,17 +10,27 @@ namespace WebApplication.Controllers
     [ApiController]
     public class PatientController : ControllerBase
     {
-        private readonly IUserService _userService;
+        private readonly IPatientService _patientService;
 
-        public UserController(IUserService userService)
+        public PatientController(IPatientService patientService)
         {
-            _userService = userService;
+            _patientService = patientService;
         }
 
-        public async Task<UserDto> Get([FromQuery] int id)
+        [HttpGet]
+        public async Task<PatientDto> Get([FromQuery] int id)
         {
-            var user = await _userService.GetByIdAsync(id);
-            return user;
+            var patient = await _patientService.GetByIdAsync(id);
+            return patient;
+        }
+        
+        [HttpGet]
+        [Route("all")]
+        public async Task<IEnumerable<PatientDto>> GetAll()
+        {
+            var patients = await _patientService.GetAll();
+
+            return patients;
         }
     }
 }

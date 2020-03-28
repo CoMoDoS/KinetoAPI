@@ -4,9 +4,9 @@ using WebApplicationData.Entities;
 
 namespace WebApplicationData.Interfaces
 {
-    public interface IUserRepository
+    public interface IAppointmentRepository
     {
-        Task<UserDto> GetByIdAsync(long id);
-        Task<IEnumerable<UserDto>> GetAll();
+        Task<AppointmentDto> GetByIdAsync(long id);
+        Task<IEnumerable<AppointmentDto>> GetAll();
     }
 }

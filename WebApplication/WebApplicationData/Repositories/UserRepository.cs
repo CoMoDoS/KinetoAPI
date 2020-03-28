@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
@@ -10,6 +12,7 @@ namespace WebApplicationData.Repositories
     internal class UserRepository : RepositoryBase, IUserRepository
     {
         private const string USER_GET_BY_ID = "select * from cabinet.user where id = :Id";
+        private const string USER_GET_ALL = "select * from cabinet.user";
         
         public UserRepository(IDbTransaction transaction) : base(transaction)
         {
@@ -28,6 +31,15 @@ namespace WebApplicationData.Repositories
                 transaction: Transaction);
 
             return user?.FirstOrDefault();
+        }
+
+        public async Task<IEnumerable<UserDto>> GetAll()
+        {
+            var users = await Connection.QueryAsync<UserDto>(
+                sql: USER_GET_ALL,
+                commandType: CommandType.Text,
+                transaction: Transaction);
+            return users;
         }
     }
 }
