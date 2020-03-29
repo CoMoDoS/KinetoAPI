@@ -21,12 +21,23 @@ namespace WebApplication
         {
             Configuration = configuration;
         }
-
+        readonly string _myCorsOrigins = "CorsPolicy";
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(options =>
+            {
+                options.AddPolicy(_myCorsOrigins,
+                    builder =>
+                    {
+                        builder.WithOrigins("http://localhost:3000")
+                            .AllowAnyHeader()
+                            .AllowAnyMethod()
+                            .AllowCredentials();
+                    });
+            });
             // services.AddControllers();
             services.AddMvc();
             ServicesConfiguration.RegisterDependencies(services);
@@ -44,11 +55,12 @@ namespace WebApplication
             {
                 app.UseDeveloperExceptionPage();
             }
+            app.UseCors(_myCorsOrigins); 
             app.UseHsts();
             app.UseHttpsRedirection();
-
+            
             app.UseRouting();
-
+            
             // app.UseAuthorization();
 
             app.UseEndpoints(endpoints => { endpoints.MapControllers(); });

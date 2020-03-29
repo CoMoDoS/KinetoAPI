@@ -1,78 +1,89 @@
-create table cabinet."User"
+create table cabinet."user"
 (
-	Id serial not null,
-	Name varchar,
-	Username varchar,
-	Password varchar,
-	Role varchar,
-	Status varchar
+	id serial not null
+		constraint user_pk
+			primary key,
+	name varchar,
+	username varchar,
+	password varchar,
+	role varchar,
+	status varchar
 );
 
-create unique index User_Id_uindex
-	on cabinet."User" (Id);
+alter table cabinet."user" owner to postgres;
 
-alter table cabinet."User"
-	add constraint User_pk
-		primary key (Id);
+create unique index user_id_uindex
+	on cabinet."user" (id);
 
-create table cabinet.Patient
+
+
+create table cabinet.patient
 (
-	Id serial not null,
-	Name varchar,
-	Phone_number varchar,
-	Appointments_done int,
-	Appointments_total int,
-	Last_pay date,
-	Added_by int,
-	Status varchar
+	id serial not null
+		constraint patient_pk
+			primary key,
+	name varchar,
+	phonenumber varchar,
+	appointmentsdone integer,
+	appointmentstotal integer,
+	lastpay date,
+	addedby integer
+		constraint patient_user_id_fk
+			references cabinet."user"
+				on update cascade on delete cascade,
+	status varchar
 );
 
-create unique index Patient_Id_uindex
-	on cabinet.Patient (Id);
+alter table cabinet.patient owner to postgres;
 
-alter table cabinet.Patient
-	add constraint Patient_pk
-		primary key (Id);
+create unique index patient_id_uindex
+	on cabinet.patient (id);
 
-create table cabinet.Treatment
+
+
+create table cabinet.treatment
 (
-	Id serial not null,
-	Name varchar,
-	Description varchar,
-	Price float,
-	Status varchar
+	id serial not null
+		constraint treatment_pk
+			primary key,
+	name varchar,
+	description varchar,
+	price double precision,
+	status varchar
 );
 
-create unique index Treatment_Id_uindex
-	on cabinet.Treatment (Id);
+alter table cabinet.treatment owner to postgres;
 
-alter table cabinet.Treatment
-	add constraint Treatment_pk
-		primary key (Id);
+create unique index treatment_id_uindex
+	on cabinet.treatment (id);
 
-create table cabinet.Appointment
+
+
+create table cabinet.appointment
 (
-	Id serial not null,
-	Id_patient int not null
-		constraint Appointment_patient_id_fk
+	id serial not null
+		constraint appointment_pk
+			primary key,
+	idPatient integer not null
+		constraint appointment_patient_id_fk
 			references cabinet.patient
 				on update cascade on delete cascade,
-	id_treatment int not null
-		constraint Appointment_treatment_id_fk
+	idTreatment integer not null
+		constraint appointment_treatment_id_fk
 			references cabinet.treatment
 				on update cascade on delete cascade,
-	Date date,
-	Done bool,
-	Added_by int,
-	Status varchar
+	date timestamp,
+	done boolean,
+	addedBy integer,
+	status varchar
 );
 
-create unique index Appointment_Id_uindex
-	on cabinet.Appointment (Id);
+alter table cabinet.appointment owner to postgres;
 
-alter table cabinet.Appointment
-	add constraint Appointment_pk
-		primary key (Id);
+create unique index appointment_id_uindex
+	on cabinet.appointment (id);
+
+
 
 INSERT  into  cabinet.user (name,username, password, role, status) values ('Edith', 'edith', 'PasEdith1', 'ADMIN', '1');
 INSERT  into  cabinet.user (name,username, password, role, status) values ('Juli', 'juli', 'PasJuli1', '1', '1');

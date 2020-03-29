@@ -18,11 +18,11 @@ namespace WebApplication.Controllers
         }
         
         [HttpGet]
-        public async Task<AppointmentDto> Get([FromQuery] int id)
+        public async Task<IActionResult> Get([FromQuery] int id)
         {
             var appointment = await _appointmentService.GetByIdAsync(id);
             
-            return appointment;
+            return Ok(appointment);
         }
         
         [HttpGet]
