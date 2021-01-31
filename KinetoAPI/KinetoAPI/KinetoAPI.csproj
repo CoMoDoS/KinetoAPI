@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <RootNamespace>KinetoAPI</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\KinetoAPI.Data\KinetoAPI.Data.csproj" />
+      <ProjectReference Include="..\KinetoAPI.Services\KinetoAPI.Services.csproj" />
+    </ItemGroup>
+
+
+</Project>
